@@ -30,10 +30,10 @@ This project processes a dataset of 3,400+ employee records (20 attributes inclu
 - **SQL** (analytics)
 
 ## Files
-- `employee_etl_pipeline.py` (or `.ipynb`) – the full notebook
+- `employee_etl_pipeline.ipynb` – full notebook (ingest, clean, validate, transform, store, analyze)
 - `HR_Dataset_dirty.csv` – sample dataset with intentionally injected data quality issues (nulls, duplicates, invalid values) used to simulate real-world messy data
 
 ## How to Run
-1. Upload the dataset to a Databricks Volume or DBFS
-2. Open the notebook in a Databricks workspace and attach it to a cluster
+1. Upload `HR_Dataset_dirty.csv` to a Databricks Volume or DBFS
+2. Open `employee_etl_pipeline.ipynb` in a Databricks workspace and attach it to a cluster
 3. Run cells sequentially — the notebook ingests, cleans, validates, stores, and analyzes the data end-to-end
